@@ -1,0 +1,112 @@
+<script>
+    arg1 = +prompt("Введите первое число ");
+    arg2 = +prompt("Введите второе число ");
+    operation = prompt("Назовите операцию которую хотите произвести с числами : Сложение, вычетание, умножение или деление. ");
+    operation = operation.toLowerCase();
+    var result = 0;
+
+    function sum(arg1, arg2) {
+        result = arg1 + arg2;
+        return result;
+    }
+
+    function dif(arg1, arg2) {
+        result = arg1 - arg2;
+        return result;
+    }
+
+    function quot(arg1, arg2) {
+        result = arg1 / arg2;
+        return result;
+    }
+
+    function com(arg1, arg2) {
+        result = arg1 * arg2;
+        return result;
+    }
+       
+
+       
+       function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case ("сложение"):
+                sum(arg1, arg2);
+                alert("Сумма чисел = " + result);
+                break;
+            case ("вычетание", "разность"):
+                dif(arg1, arg2);
+                alert("Разность чисел = " + result);
+                break;
+            case ("деление"):
+                quot(arg1, arg2);
+                alert("Частное чисел = " + result.toFixed(3));
+                break;
+            case ("умножение"):
+                com(arg1, arg2);
+                alert("Произведение чисел = " + result);
+                break;
+            
+        }
+    }
+    
+    mathOperation(arg1, arg2, operation);
+
+</script>
+
+
+<!--
+<script>
+    arg1 = +prompt("Введите первое число ");
+    arg2 = +prompt("Введите второе число ");
+    operation = prompt("Назовите операцию которую хотите произвести с числами : Сложение, вычетание, умножение или деление. ");
+    operation = operation.toLowerCase();
+    var result = 0;
+
+    function sum(arg1, arg2) {
+        result = arg1 + arg2;
+        return result;
+    }
+
+    function dif(arg1, arg2) {
+        result = arg1 - arg2;
+        return result;
+    }
+
+    function quot(arg1, arg2) {
+        result = arg1 / arg2;
+        return result;
+    }
+
+    function com(arg1, arg2) {
+        result = arg1 * arg2;
+        return result;
+    }
+
+
+    function mathOperation(arg1, arg2, operation) {
+        if (operation == "сложение") {
+            sum(arg1, arg2);
+            alert("Сумма чисел = " + result);
+        } else if (operation == "вычетание") {
+            dif(arg1, arg2);
+            alert("Разность чисел = " + result);
+        } else if (operation == "деление") {
+            quot(arg1, arg2);
+            alert("Частное чисел = " + result.toFixed(3));
+        } else if (operation == "умножение") {
+            com(arg1, arg2);
+            alert("Произведение чисел = " + result);
+        }
+    }
+    mathOperation(arg1, arg2, operation);
+
+</script>
+
+
+
+    
+
+
+  
+
+
