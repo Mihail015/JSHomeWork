@@ -1,0 +1,29 @@
+<script>
+    var answer = prompt("Введите число от 0 до 999");
+
+
+    function numbers() {
+        var object = {
+            hundreds: " ", // сотни
+            dozens: " ", // десятки
+            units: " ", // еденицы
+        }
+
+        while (parseInt(answer) > 999) {
+            console.log("Вы ввели некорректное число.");
+            answer = prompt("Введите число от 0 до 999");
+        }
+        if (answer[0] < 1) {
+            object.hundreds = 0;
+        } else {
+            answer.split;
+            object.hundreds += answer[0];
+        }
+        object.dozens = answer[1];
+        object.units = answer[2];
+
+        console.log("Еденицы :" + object.units + " " + "Десятки :" + object.dozens + " " + "Сотни :" + object.hundreds);
+    }
+    numbers();
+
+</script>
